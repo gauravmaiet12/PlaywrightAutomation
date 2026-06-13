@@ -18,7 +18,7 @@ const config = ({
   expect : {
     timeout: 5000,
   },
-  reporter: 'html',
+  reporter:  'allure-playwright',
   /* Run tests in files in parallel */
   use: {
     browserName: 'chromium',
@@ -28,6 +28,7 @@ const config = ({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    retries: 2,
   },
 });
 module.exports = config

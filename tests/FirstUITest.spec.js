@@ -31,7 +31,7 @@ test('Page fixture - Playwright Test', async ({ page }) => {
     await expect(page).toHaveTitle("Google");
 });
 
-test('Page fixture - Playwright Test Dropdpwn', async ({ page }) => {
+test('@regression Page fixture - Playwright Test Dropdpwn', async ({ page }) => {
     await page.goto("https://rahulshettyacademy.com/loginpagePractise/");
     const userName = page.locator("#username");
     const password = page.locator("[type='password']");
