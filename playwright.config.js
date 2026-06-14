@@ -14,6 +14,7 @@ import { defineConfig, devices } from '@playwright/test';
  */
 const config = ({
   testDir: './tests',
+  testMatch: '**/*.spec.js',
   timeout: 50*1000,
   expect : {
     timeout: 5000,

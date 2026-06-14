@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-test('Brower Context fixture - Playwright Test', async ({ browser }) => {
+test('@smoke Brower Context fixture - Playwright Test', async ({ browser }) => {
     const context = await browser.newContext();
     const page = await context.newPage();
     const userName = page.locator("#username");
