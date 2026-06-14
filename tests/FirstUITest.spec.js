@@ -57,7 +57,7 @@ test('@regression Page fixture - Playwright Test Dropdpwn', async ({ page }) => 
     await expect(documentlink).toHaveAttribute("class","blinkingText");
 }); 
 
-test.only('Child Window Handling', async ({ browser }) => {
+test.only(@sanity 'Child Window Handling', async ({ browser }) => {
     const context = await browser.newContext();
     const page = await context.newPage();
     const userName = page.locator("#username");
